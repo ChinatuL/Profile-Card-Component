@@ -1,0 +1,102 @@
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-saturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsla(0, 0%, 59%, 0.3);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 400 14px "Kumbh Sans", sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url(./images/bg-pattern-top.svg),
+        url(./images/bg-pattern-bottom.svg);
+    background-color: var(--dark-cyan);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 45vw bottom 50vh, left 50vw top 45vh;
+}
+
+.card {
+    width: 330px;
+    position: relative;
+}
+
+.card-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 140px;
+    background: url(./images/bg-pattern-card.svg);
+    background-color: var(--dark-cyan);
+}
+
+.card-body {
+    background-color: var(--white);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+img {
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    position: absolute;
+    top: 90px;
+    left: 120px;
+}
+
+.personal-info {
+    padding-top: 4rem;
+}
+
+.name,
+.age {
+    display: inline;
+    font-size: 18px;
+}
+
+.name {
+    color: var(--very-dark-saturated-blue);
+    font-weight: 700;
+    margin-right: 0.5rem;
+}
+
+.age {
+    color: var(--dark-grayish-blue);
+}
+
+.country {
+    padding: 0.5rem 0 1.5rem;
+    color: var(--dark-grayish-blue);
+}
+
+.statistics {
+    border-top: 1px solid var(--dark-gray);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.figures {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--very-dark-saturated-blue);
+}
+
+.figure-label {
+    padding-top: 0.3rem;
+    font-size: 10px;
+    letter-spacing: 0.1rem;
+    color: var(--dark-grayish-blue);
+}
